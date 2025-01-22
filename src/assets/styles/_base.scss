@@ -1,0 +1,14 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  color: #181818;
+}
