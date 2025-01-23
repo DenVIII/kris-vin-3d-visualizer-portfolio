@@ -6,11 +6,36 @@
       <p class="hero__subheader">"Визуализация ваших идей"</p>
     </div>
   </section>
+  <gallery-section :slides></gallery-section>
 </template>
 
 <script>
+import GallerySection from '@/components/GallerySection.vue'
+
 export default {
   name: 'HomeView',
+  components: {
+    GallerySection,
+  },
+  data: () => ({
+    slides: [
+      {
+        id: 'slide-1',
+
+        content: '<img src="/src/assets/img/1.jpg" class="slide"> ',
+      },
+      {
+        id: 'slide-2',
+
+        content: '<img src="/src/assets/img/2.jpg" class="slide"> ',
+      },
+      {
+        id: 'slide-3',
+
+        content: '<img src="/src/assets/img/3.jpg" class="slide"> ',
+      },
+    ],
+  }),
 }
 </script>
 
@@ -46,16 +71,16 @@ export default {
   }
   &__header {
     color: $color-primary;
-    font-size: $font-size-headers;
+    font-size: 4rem;
     font-family: $font-family-headers;
     font-weight: $font-weight-headers;
-    margin-bottom: 60px;
+    padding: 40px 0;
   }
   &__subheader {
     color: $color-primary;
     font-size: $font-size-subheaders;
     font-family: $font-family-text;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 </style>

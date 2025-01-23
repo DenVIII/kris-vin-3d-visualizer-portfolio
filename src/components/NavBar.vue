@@ -45,6 +45,7 @@ export default {
   &__item {
     position: relative;
     padding: 15px 20px;
+    color: $color-dark;
   }
   &__item:hover {
     cursor: pointer;
