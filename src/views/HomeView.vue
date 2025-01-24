@@ -1,9 +1,11 @@
 <template>
   <hero-section></hero-section>
   <gallery-section :slides></gallery-section>
+  <about-section></about-section>
 </template>
 
 <script>
+import AboutSection from '@/components/home/AboutSection.vue'
 import GallerySection from '@/components/GallerySection.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
 
@@ -12,6 +14,7 @@ export default {
   components: {
     HeroSection,
     GallerySection,
+    AboutSection,
   },
   data: () => ({
     slides: [

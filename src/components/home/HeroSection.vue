@@ -25,6 +25,10 @@ export default {
   background: no-repeat center url('../../assets/img/1.jpg');
   height: 100vh;
 
+  // Параллакс эффект
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   &::before {
     content: '';
     position: absolute;

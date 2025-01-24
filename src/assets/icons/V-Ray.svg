@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="362.66666"
+   height="362.66666"
+   viewBox="0 0 362.66666 362.66666"
+   sodipodi:docname="V-Ray Icon_edit1.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath18">
+      <path
+         d="M 0,272 H 272 V 0 H 0 Z"
+         id="path16" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="V-Ray Icon_edit1"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,362.66667)">
+    <path
+       d="M 0,0 H 272 V 272 H 0 Z"
+       style="fill:#2857af;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path10" />
+    <g
+       id="g12">
+      <g
+         id="g14"
+         clip-path="url(#clipPath18)">
+        <g
+           id="g20"
+           transform="translate(110.9541,106.873)">
+          <path
+             d="m 0,0 c 1.813,-2.606 3.967,-4.08 5.78,-3.967 2.154,0.113 4.533,2.267 6.347,5.553 5.78,10.768 9.519,21.308 13.147,31.393 5.1,14.281 10.313,29.014 20.853,42.955 11.107,14.505 28.673,20.172 35.133,21.759 1.02,0.227 1.247,1.474 0.454,2.153 -15.64,12.467 -35.247,19.947 -56.667,19.947 -10.541,0 -20.627,-1.813 -30.033,-5.1 -11.56,-4.08 -19.38,-14.96 -19.721,-27.2 C -25.046,63.693 -21.306,29.807 0,0"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path22" />
+        </g>
+        <g
+           id="g24"
+           transform="translate(195.2744,183.5996)">
+          <path
+             d="m 0,0 c -9.633,-1.247 -16.773,-8.16 -20.967,-13.713 -8.5,-11.334 -12.806,-23.233 -17.793,-37.174 -3.967,-10.88 -7.933,-22.214 -14.507,-34.453 -5.44,-10.087 -14.166,-20.4 -23.913,-21.08 h -1.587 c -8.839,0 -17.339,8.84 -23.233,17.227 -21.873,30.713 -27.993,64.259 -28.673,90.213 0,2.379 -3.06,3.173 -4.42,1.247 -12.92,-18.814 -18.927,-45.107 -12.24,-71.627 8.5,-33.887 35.926,-59.387 67.433,-66.413 58.933,-13.26 111.18,31.62 111.18,88.4 0,11.446 -2.153,22.326 -6.007,32.413 C 22.44,-7.593 16.207,-1.927 8.5,-0.227 5.78,0.227 2.833,0.34 0,0"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path26" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
