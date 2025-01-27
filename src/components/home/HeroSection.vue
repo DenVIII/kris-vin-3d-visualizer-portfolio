@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <div class="wrapper">
-      <h1 class="hero__header">3D Визуализатор</h1>
+      <h1 class="hero__header header">3D Визуализатор</h1>
       <p class="hero__subheader">Кристина Виноградова</p>
       <p class="hero__subheader">"Визуализация ваших идей"</p>
     </div>
@@ -51,8 +51,6 @@ export default {
   &__header {
     color: $color-primary;
     font-size: 4rem;
-    font-family: $font-family-headers;
-    font-weight: $font-weight-headers;
     padding: 40px 0;
   }
   &__subheader {

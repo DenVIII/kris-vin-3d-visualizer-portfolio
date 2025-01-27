@@ -1,6 +1,6 @@
 <template>
   <section class="gallery">
-    <h2 class="gallery__header">Некоторые из моих работ:</h2>
+    <h2 class="header gallery__header">Некоторые из моих работ:</h2>
     <vueper-slides class="no-shadow" arrows-outside bullets-outside :slide-ratio="0.5">
       <vueper-slide
         v-for="(slide, i) in slides"
@@ -34,8 +34,6 @@ export default {
   padding: 50px 200px;
   background-color: $color-primary;
   &__header {
-    font-family: $font-family-headers;
-    font-size: $font-size-headers;
     text-align: center;
     margin-bottom: 50px;
   }

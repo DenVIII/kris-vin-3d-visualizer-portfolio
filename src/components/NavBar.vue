@@ -51,23 +51,5 @@ export default {
     cursor: pointer;
     color: $color-accent;
   }
-
-  &__item::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: 15%;
-    left: 13%;
-    width: 75%;
-    height: 2px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition-delay: 0.25s;
-  }
-
-  &__item:hover::before {
-    transform: scaleX(1);
-    background-color: $color-accent;
-  }
 }
 </style>

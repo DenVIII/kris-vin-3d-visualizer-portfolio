@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <div class="wrapper">
-      <h2 class="about__header">Обо мне:</h2>
+      <h2 class="header about__header">Обо мне:</h2>
       <div class="about__content">
         <p class="about__caption">
           Занимаюсь 3D-визуализацией жилых интерьеров. Разрабатываю композицию кадра и освещение,
@@ -51,9 +51,6 @@ export default {
   }
   &__header {
     text-align: center;
-    font-size: $font-size-headers;
-    font-weight: $font-weight-headers;
-    font-family: $font-family-headers;
   }
   &__content {
     position: absolute;
