@@ -52,6 +52,13 @@ export default {
   &__header {
     text-align: center;
   }
+  &__content,
+  &__image {
+    transform: translateY(100px);
+    transition:
+      opacity 1s ease-in-out,
+      transform 2s ease-in-out;
+  }
   &__content {
     position: absolute;
     top: 22%;

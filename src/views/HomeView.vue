@@ -3,6 +3,7 @@
   <gallery-section :slides></gallery-section>
   <about-section></about-section>
   <idea-section></idea-section>
+  <my-contacts-section></my-contacts-section>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import AboutSection from '@/components/home/AboutSection.vue'
 import GallerySection from '@/components/GallerySection.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
 import IdeaSection from '@/components/home/IdeaSection.vue'
+import MyContactsSection from '@/components/home/MyContactsSection.vue'
 
 export default {
   name: 'HomeView',
@@ -18,6 +20,7 @@ export default {
     GallerySection,
     AboutSection,
     IdeaSection,
+    MyContactsSection,
   },
   data: () => ({
     slides: [
@@ -38,6 +41,37 @@ export default {
       },
     ],
   }),
+  mounted() {
+    this.checkBlocksVisibility()
+    window.addEventListener('scroll', this.checkBlocksVisibility)
+  },
+  methods: {
+    checkBlocksVisibility() {
+      // Добавляем блоки контента
+      let blocks = [
+        document.querySelector('.about__content'),
+        document.querySelector('.about__image'),
+        document.querySelector('.my-contacts__social'),
+        document.querySelector('.my-contacts__subheader'),
+      ]
+
+      // Добавляем заголовки в основной массив
+      const headers = document.querySelectorAll('.header')
+      headers.forEach((header) => blocks.push(header))
+
+      // Получаем высоту вьюпорта
+      const windowHeight = window.innerHeight
+
+      // Добавляем стили к блокам
+      blocks.forEach((block) => {
+        const blockPosition = block.getBoundingClientRect().top
+        if (blockPosition < windowHeight - 100) {
+          block.style.opacity = '1'
+          block.style.transform = 'translateY(0)'
+        }
+      })
+    },
+  },
 }
 </script>
 
@@ -54,5 +88,13 @@ h2 {
 h2,
 p {
   color: $color-dark;
+}
+
+.header {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition:
+    opacity 1s ease-in-out,
+    transform 1.5s ease-in-out;
 }
 </style>

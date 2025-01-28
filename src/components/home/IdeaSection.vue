@@ -26,6 +26,7 @@ export default {
 
 .idea {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -35,9 +36,8 @@ export default {
 }
 
 .slider {
-  margin-bottom: 40px;
   &__img {
-    width: 900px;
+    width: 100%;
   }
 }
 
