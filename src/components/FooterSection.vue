@@ -4,22 +4,16 @@
       <div class="logo row__column"><a href="#">Kristy V.</a></div>
       <div class="socials row__column">
         <a href="#"
-          ><img
-            src="../assets/icons/Telegram_footer.svg"
-            alt="иконка Telegram"
-            class="socials__icon"
+          ><img src="/icons/Telegram_footer.svg" alt="иконка Telegram" class="socials__icon"
         /></a>
         <a href="#"
-          ><img src="../assets/icons/VK_footer.svg" alt="иконка вконтакте" class="socials__icon"
+          ><img src="/icons/VK_footer.svg" alt="иконка вконтакте" class="socials__icon"
         /></a>
         <a href="#"
-          ><img src="../assets/icons/Email_footer.svg" alt="иконка Email" class="socials__icon"
+          ><img src="/icons/Email_footer.svg" alt="иконка Email" class="socials__icon"
         /></a>
         <a href="#"
-          ><img
-            src="../assets/icons/WhatsApp_footer.svg"
-            alt="иконка WhatsApp"
-            class="socials__icon"
+          ><img src="/icons/WhatsApp_footer.svg" alt="иконка WhatsApp" class="socials__icon"
         /></a>
       </div>
     </div>

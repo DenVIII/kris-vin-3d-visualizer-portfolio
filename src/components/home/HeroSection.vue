@@ -22,7 +22,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: no-repeat center url('../../assets/img/1.jpg');
+  background: no-repeat center url('/img/1.jpg');
   height: 100vh;
 
   // Параллакс эффект

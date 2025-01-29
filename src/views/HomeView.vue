@@ -14,6 +14,9 @@ import HeroSection from '@/components/home/HeroSection.vue'
 import IdeaSection from '@/components/home/IdeaSection.vue'
 import MyContactsSection from '@/components/home/MyContactsSection.vue'
 import FooterSection from '@/components/FooterSection.vue'
+import image1 from '/img/1.jpg'
+import image2 from '/img/2.jpg'
+import image3 from '/img/3.jpg'
 
 export default {
   name: 'HomeView',
@@ -29,18 +32,15 @@ export default {
     slides: [
       {
         id: 'slide-1',
-
-        content: '<img src="/src/assets/img/1.jpg" class="slide"> ',
+        imageSrc: image1,
       },
       {
         id: 'slide-2',
-
-        content: '<img src="/src/assets/img/2.jpg" class="slide"> ',
+        imageSrc: image2,
       },
       {
         id: 'slide-3',
-
-        content: '<img src="/src/assets/img/3.jpg" class="slide"> ',
+        imageSrc: image3,
       },
     ],
   }),

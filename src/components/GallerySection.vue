@@ -1,12 +1,13 @@
 <template>
   <section class="gallery">
     <h2 class="header gallery__header">Некоторые из моих работ:</h2>
-    <vueper-slides class="no-shadow" arrows-outside bullets-outside :slide-ratio="0.5">
+    <vueper-slides class="no-shadow" arrows-outside bullets-outside :slide-ratio="0.6">
       <vueper-slide
         v-for="(slide, i) in slides"
         :key="i"
         :title="slide.title"
-        :content="slide.content"
+        :image="slide.imageSrc"
+        :class="'slide'"
       ></vueper-slide>
     </vueper-slides>
   </section>
@@ -43,10 +44,5 @@ export default {
   &__arrow {
     color: $color-accent;
   }
-}
-
-.slide {
-  width: 900px;
-  height: 100%;
 }
 </style>

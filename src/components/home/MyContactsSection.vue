@@ -3,20 +3,13 @@
     <h2 class="header my-contacts__header">Давайте поработаем вместе!</h2>
     <p class="subheader my-contacts__subheader">Мои контакты:</p>
     <div class="my-contacts__social social">
+      <a href="#"><img src="/icons/Telegram.svg" alt="иконка Telegram" class="social__icon" /></a>
+      <a href="#"><img src="/icons/VK-Logo.svg" alt="иконка вконтакте" class="social__icon" /></a>
       <a href="#"
-        ><img src="../../assets/icons/Telegram.svg" alt="иконка Telegram" class="social__icon"
+        ><img src="/icons/Email_inverted.svg" alt="иконка Email" class="social__icon"
       /></a>
       <a href="#"
-        ><img src="../../assets/icons/VK-Logo.svg" alt="иконка вконтакте" class="social__icon"
-      /></a>
-      <a href="#"
-        ><img src="../../assets/icons/Email_inverted.svg" alt="иконка Email" class="social__icon"
-      /></a>
-      <a href="#"
-        ><img
-          src="../../assets/icons/WhatsApp-Green.svg"
-          alt="иконка WhatsApp"
-          class="social__icon"
+        ><img src="/icons/WhatsApp-Green.svg" alt="иконка WhatsApp" class="social__icon"
       /></a>
     </div>
   </section>

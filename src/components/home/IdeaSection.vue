@@ -3,8 +3,8 @@
     <h2 class="header idea__header">От идеи до реализации:</h2>
     <ImgComparisonSlider class="slider idea__slider">
       <!-- eslint-disable -->
-      <img slot="first" class="slider__img first_img" src="../../assets/img/placeholder-1.jpg" />
-      <img slot="second" class="slider__img second_img" src="../../assets/img/1.jpg" />
+      <img slot="first" class="slider__img first_img" src="/img/placeholder-1.jpg" />
+      <img slot="second" class="slider__img second_img" src="/img/1.jpg" />
       <!-- eslint-enable -->
     </ImgComparisonSlider>
   </section>

@@ -18,14 +18,14 @@
           <b>3Ds Max / Corona Renderer / V-Ray / Adobe Photoshop</b>
         </p>
         <div class="icons">
-          <img src="../../assets/icons/3ds-Max.svg" alt="3Ds Max" class="icon" />
-          <img src="../../assets/icons/Chaos-Corona-01.svg" alt="3Ds Max" class="icon" />
-          <img src="../../assets/icons/V-Ray.svg" alt="3Ds Max" class="icon" />
-          <img src="../../assets/icons/Adobe-Photoshop.svg" alt="3Ds Max" class="icon" />
+          <img src="/icons/3ds-Max.svg" alt="3Ds Max" class="icon" />
+          <img src="/icons/Chaos-Corona-01.svg" alt="3Ds Max" class="icon" />
+          <img src="/icons/V-Ray.svg" alt="3Ds Max" class="icon" />
+          <img src="/icons/Adobe-Photoshop.svg" alt="3Ds Max" class="icon" />
         </div>
       </div>
       <img
-        src="../../assets/img/close-up-1.jpg"
+        src="/img/close-up-1.jpg"
         alt="Пример работы: близкое изображение цветка перед загородным домом"
         class="about__image"
       />
