@@ -33,6 +33,7 @@ export default {
 
 .my-contacts {
   padding: 40px 0;
+  padding-bottom: 80px;
   background-color: $color-primary;
   &__header {
     text-align: center;
