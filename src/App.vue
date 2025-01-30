@@ -1,19 +1,20 @@
 <template>
   <NavBar />
   <main class="content">
-    <HomeView />
+    <router-view></router-view>
   </main>
+  <footer-section></footer-section>
 </template>
 
 <script>
+import FooterSection from './components/FooterSection.vue'
 import NavBar from './components/NavBar.vue'
-import HomeView from './views/HomeView.vue'
 
 export default {
   name: 'App',
   components: {
-    HomeView,
     NavBar,
+    FooterSection,
   },
 }
 </script>

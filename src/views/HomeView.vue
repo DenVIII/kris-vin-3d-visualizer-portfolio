@@ -4,7 +4,6 @@
   <about-section></about-section>
   <idea-section></idea-section>
   <my-contacts-section></my-contacts-section>
-  <footer-section></footer-section>
 </template>
 
 <script>
@@ -13,7 +12,7 @@ import GallerySection from '@/components/GallerySection.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
 import IdeaSection from '@/components/home/IdeaSection.vue'
 import MyContactsSection from '@/components/home/MyContactsSection.vue'
-import FooterSection from '@/components/FooterSection.vue'
+
 import image1 from '/img/1.jpg'
 import image2 from '/img/2.jpg'
 import image3 from '/img/3.jpg'
@@ -26,7 +25,6 @@ export default {
     AboutSection,
     IdeaSection,
     MyContactsSection,
-    FooterSection,
   },
   data: () => ({
     slides: [
