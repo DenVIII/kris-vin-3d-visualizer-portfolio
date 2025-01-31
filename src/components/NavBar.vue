@@ -3,7 +3,7 @@
     <a href="/" class="navbar__logo">Kristy V.</a>
     <div class="navbar__items">
       <a class="navbar__item" href="/portfolio">Портфолио</a>
-      <a class="navbar__item" href="#">Условия</a>
+      <a class="navbar__item" href="/conditions">Условия</a>
       <a class="navbar__item" href="#">Оплата</a>
       <a class="navbar__item" href="#">Контакты</a>
     </div>

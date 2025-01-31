@@ -1,8 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
+import ConditionsView from '@/views/ConditionsView.vue'
 
 const routes = [
+  {
+    path: '/conditions',
+    name: 'conditions',
+    component: ConditionsView,
+  },
   {
     path: '/portfolio',
     name: 'portfolio',

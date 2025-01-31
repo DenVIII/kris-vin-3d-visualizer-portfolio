@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ProjectSlider from '@/components/portfolio/projectSlider.vue'
+import ProjectSlider from '@/components/portfolio/ProjectSlider.vue'
 import image1 from '/img/1.jpg'
 import image2 from '/img/2.jpg'
 import image3 from '/img/3.jpg'
