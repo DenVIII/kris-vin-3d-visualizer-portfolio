@@ -108,7 +108,53 @@
       </div>
       <div class="conditions__image"></div>
     </section>
-    <section class="conditions__stages conditions__stages_wrapper"></section>
+    <section class="conditions__stages conditions__stages_wrapper">
+      <h2>Этапы работы:</h2>
+      <ul class="stages">
+        <li class="stage">
+          <div class="stage__number">1</div>
+          <p class="stage__title title">Обсуждение и утверждение ТЗ</p>
+          <p class="stage__descr descr">
+            Вы присылаете техническое задание (планы, чертежи, примеры материалов и мебели). Мы
+            обсуждаем детали, ракурсы и стилистику, чтобы я могла точно понять ваши ожидания. Вы
+            вносите предоплату (50% от стоимости заказа) и я начинаю работу.
+          </p>
+        </li>
+        <li class="stage">
+          <div class="stage__number">2</div>
+          <p class="stage__title title">Первое превью: геометрия и ракурсы</p>
+          <p class="stage__descr descr">
+            Я создаю базовую сцену с правильной геометрией и настраиваю ракурсы. Вы получаете
+            черно-белый эскиз для утверждения композиции и внесения первых правок.
+          </p>
+        </li>
+        <li class="stage">
+          <div class="stage__number">3</div>
+          <p class="stage__title title">Второе превью: материалы и текстуры</p>
+          <p class="stage__descr descr">
+            После согласования геометрии я добавляю материалы, текстуры и основное освещение. Вы
+            оцениваете, как выглядит интерьер, и вносите корректировки по материалам и декору.
+          </p>
+        </li>
+        <li class="stage">
+          <div class="stage__number">4</div>
+          <p class="stage__title title">Третье превью: детализация и финальные правки</p>
+          <p class="stage__descr descr">
+            Я добавляю детали: мебель, декор, светильники и другие элементы. Вы утверждаете
+            финальный вид сцены, и мы вносим последние правки.
+          </p>
+        </li>
+        <li class="stage">
+          <div class="stage__number">5</div>
+          <p class="stage__title title">Финальный рендер</p>
+          <p class="stage__descr descr">
+            После согласования всех деталей я выполняю финальный рендер в высоком разрешении. Вы
+            вносите вторую часть платежа и получаете готовые изображения, которые точно передают,
+            как будет выглядеть ваш интерьер.
+          </p>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -119,7 +165,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../assets/styles/variables';
 
 h1,
@@ -127,6 +173,7 @@ h2 {
   font-size: $font-size-headers;
   font-weight: $font-weight-headers;
   font-family: $font-family-headers;
+  text-align: center;
 }
 
 h2,
@@ -220,5 +267,46 @@ p {
     text-align: left;
     text-justify: auto;
   }
+}
+
+.stages {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
+  width: 960px;
+  margin: 40px auto;
+}
+
+.stage {
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: $font-family-headers;
+    font-weight: $font-weight-headers;
+    color: $color-dark;
+    background-color: $color-primary;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    align-items: end;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+.stage:nth-child(odd) {
+  border-right: 3px dotted $color-primary;
+  margin-right: -10px;
+  padding-right: 10px;
 }
 </style>

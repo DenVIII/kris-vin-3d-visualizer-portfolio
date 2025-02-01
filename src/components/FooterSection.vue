@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="row">
-      <div class="logo row__column"><a href="#">Kristy V.</a></div>
+      <div class="logo row__column"><a href="/">Kristy V.</a></div>
       <div class="socials row__column">
         <a href="#"
           ><img src="/icons/Telegram_footer.svg" alt="иконка Telegram" class="socials__icon"
@@ -20,9 +20,9 @@
     <div class="row">
       <p class="copyright row__column">Кристина Виноградова © 2025</p>
       <div class="menu row__column">
-        <a class="menu__item" href="#">Главная</a>
-        <a class="menu__item" href="#">Портфолио</a>
-        <a class="menu__item" href="#">Условия</a>
+        <a class="menu__item" href="/">Главная</a>
+        <a class="menu__item" href="/portfolio">Портфолио</a>
+        <a class="menu__item" href="/conditions">Условия</a>
         <a class="menu__item" href="#">Оплата</a>
         <a class="menu__item" href="#">Контакты</a>
       </div>
