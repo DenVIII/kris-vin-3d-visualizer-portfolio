@@ -23,7 +23,7 @@
         <a class="menu__item" href="/">Главная</a>
         <a class="menu__item" href="/portfolio">Портфолио</a>
         <a class="menu__item" href="/conditions">Условия</a>
-        <a class="menu__item" href="#">Оплата</a>
+        <a class="menu__item" href="/payment">Оплата</a>
         <a class="menu__item" href="#">Контакты</a>
       </div>
     </div>

@@ -2,8 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
 import ConditionsView from '@/views/ConditionsView.vue'
+import PaymentView from '@/views/PaymentView.vue'
 
 const routes = [
+  { path: '/payment', name: 'payment', component: PaymentView },
   {
     path: '/conditions',
     name: 'conditions',

@@ -187,7 +187,7 @@ p {
   justify-content: center;
   align-items: center;
   background: no-repeat center url('/img/3.jpg');
-  height: 80vh;
+  height: 85vh;
 
   // Параллакс эффект
   background-attachment: fixed;
@@ -265,7 +265,6 @@ p {
   }
   .descr {
     text-align: left;
-    text-justify: auto;
   }
 }
 

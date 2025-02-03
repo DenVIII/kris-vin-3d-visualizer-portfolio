@@ -77,7 +77,6 @@ export default {
   &__caption {
     text-indent: 2ch;
     text-align: left;
-    text-justify: auto;
     color: $color-dark;
     font-family: $font-family-text;
   }
