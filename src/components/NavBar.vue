@@ -5,7 +5,7 @@
       <a class="navbar__item" href="/portfolio">Портфолио</a>
       <a class="navbar__item" href="/conditions">Условия</a>
       <a class="navbar__item" href="/payment">Оплата</a>
-      <a class="navbar__item" href="#">Контакты</a>
+      <a class="navbar__item" href="/contacts">Контакты</a>
     </div>
   </nav>
 </template>
