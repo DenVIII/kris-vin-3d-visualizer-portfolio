@@ -81,4 +81,10 @@ footer p {
   color: #636363;
   font-family: $font-family-text;
 }
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 40px 80px;
+  }
+}
 </style>

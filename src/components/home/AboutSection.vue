@@ -1,7 +1,7 @@
 <template>
   <section class="about">
+    <h2 class="header about__header">Обо мне:</h2>
     <div class="wrapper">
-      <h2 class="header about__header">Обо мне:</h2>
       <div class="about__content">
         <p class="about__caption">
           Занимаюсь 3D-визуализацией жилых интерьеров. Разрабатываю композицию кадра и освещение,
@@ -43,14 +43,15 @@ export default {
 @use '../../assets/styles/variables';
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   padding: 40px 0;
   .wrapper {
     position: relative;
-    height: 80%;
+    min-height: 80%;
   }
   &__header {
     text-align: center;
+    margin-bottom: 40px;
   }
   &__content,
   &__image {
@@ -61,7 +62,7 @@ export default {
   }
   &__content {
     position: absolute;
-    top: 22%;
+    margin-top: 40px;
     left: 20%;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ export default {
   }
   &__image {
     position: absolute;
-    top: 15%;
+    top: 0%;
     right: 10%;
     width: 600px;
     height: 400px;
@@ -96,6 +97,24 @@ export default {
     width: 50px;
     height: 50px;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    margin: 0 auto;
+    width: 768px;
+    &__content {
+      position: static;
+    }
+    &__image {
+      top: -5%;
+      right: -10%;
+      width: 400px;
+      height: 300px;
+      border-radius: 10px;
+      z-index: -1;
+    }
   }
 }
 </style>
