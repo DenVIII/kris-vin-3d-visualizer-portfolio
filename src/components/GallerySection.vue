@@ -2,13 +2,12 @@
   <section class="gallery">
     <h2 class="header gallery__header">Некоторые из моих работ:</h2>
     <div class="wrapper">
-      <vueper-slides class="no-shadow" arrows-outside bullets-outside :slide-ratio="2 / 3">
+      <vueper-slides arrows-outside bullets-outside :slide-ratio="2 / 3" :breakpoints="breakpoints">
         <vueper-slide
           v-for="(slide, i) in slides"
           :key="i"
           :title="slide.title"
           :image="slide.imageSrc"
-          :class="'slide'"
         ></vueper-slide>
       </vueper-slides>
     </div>
@@ -26,6 +25,18 @@ export default {
     VueperSlides,
     VueperSlide,
   },
+  data: () => ({
+    breakpoints: {
+      1024: {
+        arrowsOutside: false,
+        arrows: true,
+      },
+      600: {
+        slideRatio: 1,
+        arrows: false,
+      },
+    },
+  }),
 }
 </script>
 
@@ -42,7 +53,7 @@ export default {
   background-color: $color-primary;
   &__header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .wrapper {
     width: 900px;
@@ -50,8 +61,36 @@ export default {
 }
 
 .vueperslides {
+  position: relative;
   &__arrow {
-    color: $color-accent;
+    color: $color-dark;
+  }
+  &__bullets {
+    color: $color-dark;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    min-height: auto;
+    padding: 0;
+    &__header {
+      margin-bottom: 0;
+    }
   }
 }
 </style>

@@ -181,4 +181,53 @@ export default {
 .sub_item:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 800px) {
+  .details {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .payment {
+    &__header {
+      font-size: 1.5rem;
+    }
+
+    &__details {
+      width: 100%;
+    }
+  }
+
+  .intro {
+    &__header {
+      font-size: 1.5rem;
+    }
+
+    &__caption {
+      width: 80%;
+      height: auto;
+      padding: 20px 30px;
+    }
+  }
+  .details {
+    &__header {
+      font-size: 1.5rem;
+    }
+    &__list {
+      border-radius: 0;
+      padding: 20px 20px 20px 40px;
+    }
+
+    .sub_list {
+      padding: 20px;
+    }
+  }
+}
 </style>

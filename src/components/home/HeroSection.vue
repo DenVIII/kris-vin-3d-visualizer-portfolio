@@ -60,4 +60,16 @@ export default {
     font-weight: 300;
   }
 }
+
+@media (max-width: 600px) {
+  .hero {
+    background-attachment: scroll;
+    &__header {
+      font-size: 2rem;
+    }
+    &__subheader {
+      font-size: 1rem;
+    }
+  }
+}
 </style>

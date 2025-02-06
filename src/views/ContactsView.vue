@@ -96,4 +96,22 @@ export default {
 .social__icon {
   margin: 10px;
 }
+
+@media (max-width: 500px) {
+  .intro {
+    &__header {
+      display: none;
+    }
+    &__details {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  .details {
+    &__email {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
+}
 </style>

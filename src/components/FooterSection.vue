@@ -87,4 +87,22 @@ footer p {
     padding: 40px 80px;
   }
 }
+
+@media (max-width: 800px) {
+  footer {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    padding: 20px;
+    .row {
+      flex-direction: column-reverse;
+      &__column {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
 </style>

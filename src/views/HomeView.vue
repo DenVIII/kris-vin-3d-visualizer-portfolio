@@ -98,4 +98,16 @@ p {
     opacity 1s ease-in-out,
     transform 1.5s ease-in-out;
 }
+
+@media (max-width: 800px) {
+  .header {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 </style>

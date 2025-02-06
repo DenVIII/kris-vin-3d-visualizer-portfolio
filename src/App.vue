@@ -19,4 +19,10 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@media (max-width: 500px) {
+  .header {
+    font-size: 1.5rem;
+  }
+}
+</style>

@@ -44,4 +44,10 @@ export default {
 .slider:focus {
   outline: none;
 }
+
+@media (max-width: 500px) {
+  .idea {
+    min-height: auto;
+  }
+}
 </style>

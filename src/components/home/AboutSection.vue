@@ -47,7 +47,7 @@ export default {
   padding: 40px 0;
   .wrapper {
     position: relative;
-    min-height: 80%;
+    min-height: 500px;
   }
   &__header {
     text-align: center;
@@ -88,6 +88,7 @@ export default {
     width: 600px;
     height: 400px;
     border-radius: 20px;
+    z-index: -1;
   }
 }
 .icons {
@@ -114,6 +115,49 @@ export default {
       height: 300px;
       border-radius: 10px;
       z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 40px;
+    .wrapper {
+      margin: 0 auto;
+    }
+    &__content {
+      margin-top: 0;
+      width: 100%;
+      height: auto;
+    }
+    &__image {
+      position: static;
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+    }
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__caption:last-of-type {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .icons {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 0 20px;
+    min-height: auto;
+    &__header {
+      margin-bottom: 0;
     }
   }
 }

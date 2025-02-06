@@ -308,4 +308,83 @@ p {
   margin-right: -10px;
   padding-right: 10px;
 }
+
+@media (max-width: 1000px) {
+  .conditions {
+    &__content {
+      width: 800px;
+    }
+    &__image {
+      width: 800px;
+      right: 0%;
+    }
+  }
+  .stages {
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .conditions {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    &__content {
+      width: 100%;
+      padding: 20px 40px;
+      margin-bottom: 20px;
+    }
+    &__image {
+      margin-top: 20px;
+      position: static;
+
+      width: 100%;
+    }
+  }
+  .stages {
+    padding: 20px 40px;
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .list {
+    padding: 10px 20px;
+    &__item {
+      padding: 5px 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .conditions {
+    &__content {
+      padding: 20px 0;
+    }
+    &__image {
+      display: none;
+    }
+  }
+  .list {
+    border-radius: 0;
+  }
+  .stages {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stage:nth-child(odd) {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .stage {
+    border-left: 3px dotted $color-primary;
+    padding-left: 10px;
+    margin-left: -10px;
+  }
+}
 </style>

@@ -5,7 +5,13 @@
       <span class="caption__descr">{{ description }}</span>
     </p>
     <div class="wrapper">
-      <vueper-slides class="no-shadow" arrows-outside bullets-outside :slide-ratio="2 / 3">
+      <vueper-slides
+        class="no-shadow"
+        arrows-outside
+        bullets-outside
+        :slide-ratio="2 / 3"
+        :breakpoints="breakpoints"
+      >
         <vueper-slide
           v-for="(slide, i) in slides"
           :key="i"
@@ -30,6 +36,18 @@ export default {
     VueperSlides,
     VueperSlide,
   },
+  data: () => ({
+    breakpoints: {
+      1024: {
+        arrowsOutside: false,
+        arrows: true,
+      },
+      600: {
+        slideRatio: 1,
+        arrows: false,
+      },
+    },
+  }),
 }
 </script>
 
@@ -72,6 +90,26 @@ export default {
   &__bullet:focus,
   &__arrow:hover {
     color: $color-accent;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project {
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio__header {
+    font-size: 1.5rem;
+  }
+  .project {
+    padding: 20px 0;
+    &__caption {
+      text-align: center;
+    }
   }
 }
 </style>

@@ -40,6 +40,7 @@ export default {
   &__social,
   &__subheader {
     transform: translateY(50px);
+    font-family: $font-family-text;
     opacity: 0.5;
     transition:
       opacity 1s ease-in-out,
@@ -63,6 +64,19 @@ export default {
   }
   &__icon:hover {
     transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 500px) {
+  .my-contacts {
+    padding: 20px;
+  }
+  .social {
+    gap: 15px;
+    &__icon {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 </style>
